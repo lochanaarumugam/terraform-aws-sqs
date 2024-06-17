@@ -27,18 +27,6 @@ variable "receive_wait_time" {
   default     = 20
 }
 
-variable "dead_letter_queue_arn" {
-  description = "The ARN of the dead letter queue"
-  type        = string
-  default     = ""
-}
-
-variable "max_receive_count" {
-  description = "The maximum number of times a message can be received before being sent to the dead letter queue"
-  type        = number
-  default     = 5
-}
-
 variable "environment" {
   description = "The environment (e.g., dev, prod)"
   type        = string
